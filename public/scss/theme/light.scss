@@ -1,10 +1,10 @@
 :root,
 :host {
-  --sys-background: #faf8ff;
+  --sys-background: #fff;
   --sys-on-background: #1a1b21;
-  --sys-surface: #faf8ff;
+  --sys-surface: #fff;
   --sys-surface-dim: #dad9e0;
-  --sys-surface-bright: #faf8ff;
+  --sys-surface-bright: #fff;
   --sys-surface-container-lowest: #ffffff;
   --sys-surface-container-low: #f4f3fa;
   --sys-surface-container: #eeedf4;
@@ -58,4 +58,18 @@
   --sys-error-fixed-dim: #ffb4ab;
   --sys-on-error-fixed: #3b0907;
   --sys-on-error-fixed-variant: #73342d;
+
+  // mbasss custom component 
+  .mat-toolbar{
+    --mat-toolbar-container-background-color: #F8FAFD;
+  }
+  .mat-drawer {
+    --mat-sidenav-container-background-color: #F8FAFD;
+  }
+  .mat-drawer-container {
+    --mat-sidenav-content-background-color: #F8FAFD;
+  }
+  .card-content {
+    border-color: #ffffff  
+  }
 }

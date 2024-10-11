@@ -1,8 +1,8 @@
 :root.dark {
-  --sys-background: #121318;
+  --sys-background: #141414;
   --sys-on-background: #e3e1e9;
-  --sys-surface: #121318;
-  --sys-surface-dim: #121318;
+  --sys-surface: #141414;
+  --sys-surface-dim: #141414;
   --sys-surface-bright: #38393f;
   --sys-surface-container-lowest: #0d0e13;
   --sys-surface-container-low: #1a1b21;
@@ -57,4 +57,19 @@
   --sys-error-fixed-dim: #ffb4ab;
   --sys-on-error-fixed: #3b0907;
   --sys-on-error-fixed-variant: #73342d;
+
+  // mbasss custom component 
+  .mat-toolbar{
+    --mat-toolbar-container-background-color: #1B1B1B;
+  }
+  .mat-drawer {
+    --mat-sidenav-container-background-color: #1B1B1B;
+  }
+  .mat-drawer-container {
+    --mat-sidenav-content-background-color: #1B1B1B;
+  }
+  
+  .card-content {
+    border-color: #141414
+  }
 }
