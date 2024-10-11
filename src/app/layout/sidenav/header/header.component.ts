@@ -18,7 +18,7 @@ import { DarkThemeService } from '../../../services/ui/dark-theme.service';
   template: `
     
     <mat-toolbar [class.mat-elevation-z2]="true">
-      <button mat-icon-button (click)="collapsed.set(!collapsed())">
+      <button mat-icon-button (click)="toggleSidenav()">
         <mat-icon>menu</mat-icon>
       </button>
       <button
@@ -42,8 +42,10 @@ import { DarkThemeService } from '../../../services/ui/dark-theme.service';
 })
 export class HeaderComponent {
   // Sidenav Collapse
-  collpasedService = inject(SidenavService);
-  collapsed = this.collpasedService.collapsed;
+  sidenavService = inject(SidenavService);
+  toggleSidenav() {
+    this.sidenavService.toggleSidenav();
+  }
 
   // Dark Theme
   darkThemeService = inject(DarkThemeService);
