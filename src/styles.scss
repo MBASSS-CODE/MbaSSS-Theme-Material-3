@@ -39,6 +39,9 @@ $mbassscode-theme-theme: mat.define-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import "../public/scss/sidenav.scss";
+
 @import "../public/scss/button/basic-button.scss";
 @import "../public/scss/button/raised-button.scss";
 @import "../public/scss/button/stroked-button.scss";
