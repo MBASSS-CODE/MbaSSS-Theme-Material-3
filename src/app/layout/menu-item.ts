@@ -18,8 +18,13 @@ export const menuItem: MenuItem[] = [
     childRoutes: [
       {
         icon: 'table',
-        label: 'Dynamic Column',
-        route: 'dynamyc-column'
+        label: 'Basic Table',
+        route: 'basic-table',
+      },
+      {
+        icon: 'table',
+        label: 'Dynamic Table',
+        route: 'dynamic-table'
       }
     ]
   },

@@ -31,7 +31,7 @@ import { MenuItem } from '../../../types/menuItem-type';
       mat-list-item 
       (click)="nestedMenuOpen.set(!nestedMenuOpen())"
       [routerLink]="routeHistory() + '/' + item().route"
-      routerLinkActive="selected-menu-item "
+      routerLinkActive="selected-menu-item"
       #rla="routerLinkActive"
       [activated]="rla.isActive"
       [style.--mat-list-list-item-leading-icon-start-space]="indentation()"
