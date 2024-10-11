@@ -9,6 +9,12 @@ export const routes: Routes = [
   },
   {
     path: 'sidenav',
-    component: SidenavComponent
-  }
+    component: SidenavComponent,
+    children: [
+      {
+        path: 'components',
+        loadChildren: () => import('./features/components/components.module').then(m => m.ComponentsModule)
+      }
+    ]
+  },
 ];

@@ -2,14 +2,10 @@ import { Component, computed, inject, Input, signal } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MenuItemComponent } from "./menu-item.component";
 import { SidenavService } from '../../../services/ui/sidenav.service';
+import { menuItem } from '../../menu-item';
+import { MenuItem } from '../../../types/menuItem-type';
 // import { MenuItemComponent } from '../menu-item/menu-item.component';
 
-export type MenuItem = {
-  icon: string;
-  label: string;
-  route?: string;
-  childRoutes?: MenuItem[]
-};
 
 @Component({
   selector: 'app-navigation',
@@ -77,62 +73,7 @@ export class NavigationComponent {
   sidenavCollapse = this.collpasedService.collapsed;
   profileSizePicture = this.collpasedService.profileSizePicture;
 
-  menuItems = signal<MenuItem[]>([
-    {
-      icon: 'home',
-      label: 'Button',
-      route: 'side-nav/components/button',
-    },
-    {
-      icon: 'list',
-      label: 'Card',
-      route: 'side-nav/components/card'
-    },
-    {
-      icon: 'table',
-      label: 'Table',
-      route: 'side-nav/components/table',
-      childRoutes: [
-        {
-          icon: 'table',
-          label: 'Dynamic Column',
-          route: 'dynamyc-column'
-        }
-      ]
-    },
-    {
-      icon: 'menu',
-      label: 'nested',
-      route: 'side-nav/page-nested',
-      childRoutes: [
-        {
-          icon: 'menu',
-          label: 'nested-first',
-          route: 'page-nested-first',
-          childRoutes: [
-            {
-              icon: 'menu',
-              label: 'nested-first-first',
-              route: 'page-nested-first-first',
-            },
-            {
-              icon: 'menu',
-              label: 'nested-first-second',
-              route: 'page-nested-first-second',
-            },
-          ]
-        },
-        {
-          icon: 'menu',
-          label: 'nested-second',
-          route: 'page-nested-second',
-        },
-        {
-          icon: 'menu',
-          label: 'nested-third',
-          route: 'page-nested-third',
-        },
-      ]
-    }
-  ])
+  // Menu Item
+  menuItems = signal<MenuItem[]>(menuItem);
+  
 }
