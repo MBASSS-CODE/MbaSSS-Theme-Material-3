@@ -5,6 +5,10 @@
 
 .mat-mdc-nav-list .mat-mdc-list-item {
   // border-radius:
-  --mat-list-active-indicator-shape: 9px;
-  --mat-mdc-focus-indicator-border-radius: 9px;
+  // --mat-list-active-indicator-shape: 9px;
+  // --mat-mdc-focus-indicator-border-radius: 9px;
+}
+
+.mdc-list-item.mdc-list-item--with-one-line {
+  height: 40px !important;
 }

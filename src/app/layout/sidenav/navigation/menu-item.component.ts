@@ -86,7 +86,7 @@ import { SidenavService } from '../../../services/ui/sidenav.service';
 
     .selected-menu-item {
       border-left: 5px solid;
-      border-left-color: var(--mdc-filled-button-container-color);
+      border-left-color: #7c79e1;
     }
   `
 })

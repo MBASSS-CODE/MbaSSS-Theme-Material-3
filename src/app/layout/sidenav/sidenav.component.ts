@@ -8,6 +8,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { SidenavService } from '../../services/ui/sidenav.service';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-sidenav',
@@ -22,7 +23,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     RouterOutlet,
     RouterLink,
     HeaderComponent,
-    NavigationComponent
+    NavigationComponent,
+    MatCardModule
   ],
   template: `
     <app-header/>
@@ -34,14 +36,21 @@ import { NavigationComponent } from './navigation/navigation.component';
       <app-navigation/>
       </mat-sidenav>
       <mat-sidenav-content class="content" [style.margin-left]="sidenavWidth()">
-        asdasdasd
+      <mat-card class="card-content" appearance="outlined">
+        <mat-card-content>
+          <router-outlet/>
+        </mat-card-content>
+      </mat-card>
       </mat-sidenav-content>
     </mat-sidenav-container>
 
   `,
   styles: `
+    :host * {
+      transition: all 0.3s ease-in-out;
+    }
     .content {
-      padding: 24px;
+      padding: 0 24px;
     }
 
     mat-sidenav-container { 
@@ -50,7 +59,11 @@ import { NavigationComponent } from './navigation/navigation.component';
 
     mat-sidenav,
     mat-sidenav-content {
-      transition: all 0.5s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card-content {
+      height: calc(100vh - 64px);
     }
   `
 })
@@ -58,15 +71,4 @@ export class SidenavComponent {
 
   collpasedService = inject(SidenavService);
   sidenavWidth = this.collpasedService.sidenavWidth;
-
-  // Dark Mode || seharusnya bisa di pisah menjadi komponen header
-  // darkMode = signal(false);
-
-  // setDarkMode = effect(() => {
-  //   this.darkMode();
-  // })
-
-  // toggleTheme(): void {
-  //   this.themeService.toggleTheme();
-  // }
 }
