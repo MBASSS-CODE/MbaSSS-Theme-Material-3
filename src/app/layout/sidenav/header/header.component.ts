@@ -17,10 +17,12 @@ import { DarkThemeService } from '../../../services/ui/dark-theme.service';
   ],
   template: `
     
-    <mat-toolbar [class.mat-elevation-z2]="true">
+    <mat-toolbar [class.mat-elevation-z2]="false">
       <button mat-icon-button (click)="toggleSidenav()">
         <mat-icon>menu</mat-icon>
       </button>
+      <span>My App</span>
+      <span class="spacer"></span>
       <button
       mat-icon-button
       (click)="toggleTheme()"
@@ -35,9 +37,12 @@ import { DarkThemeService } from '../../../services/ui/dark-theme.service';
   `,
   styles: `
     mat-toolbar {
-    position: relative;
-    z-index: 5;
-  }
+      position: relative;
+      z-index: 5;
+    }
+    .spacer {
+      flex: 1 1 auto;
+    }
   `
 })
 export class HeaderComponent {
