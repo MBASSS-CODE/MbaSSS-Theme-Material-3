@@ -9,12 +9,12 @@ export const menuItem: MenuItem[] = [
   {
     icon: 'list',
     label: 'Card',
-    route: 'side-nav/components/card'
+    route: 'sidenav/components/card'
   },
   {
     icon: 'table',
     label: 'Table',
-    route: 'side-nav/components/table',
+    route: 'sidenav/components/table',
     childRoutes: [
       {
         icon: 'table',

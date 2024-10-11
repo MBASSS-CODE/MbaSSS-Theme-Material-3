@@ -63,7 +63,7 @@ import {MatCardModule} from '@angular/material/card';
     }
 
     .card-content {
-      height: calc(100vh - 64px);
+      min-height: calc(100vh - 64px);
     }
   `
 })

@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: 'button',
     loadComponent: () => import('./button/button.component')
+  },
+  {
+    path: 'card',
+    loadComponent: () => import('./card/card.component')
   }
 ];
 
