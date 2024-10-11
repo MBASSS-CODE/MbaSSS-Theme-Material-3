@@ -5,9 +5,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
 import { SidenavService } from '../../../services/ui/sidenav.service';
+import { DarkThemeService } from '../../../services/ui/dark-theme.service';
 @Component({
   selector: 'app-header',
   standalone: true,
+  providers: [DarkThemeService],
   imports: [
     MatToolbarModule,
     MatIconModule,
@@ -19,13 +21,16 @@ import { SidenavService } from '../../../services/ui/sidenav.service';
       <button mat-icon-button (click)="collapsed.set(!collapsed())">
         <mat-icon>menu</mat-icon>
       </button>
-      <!-- <button mat-icon-button (click)="toggleTheme(); darkMode.set(!darkMode())">
+      <button
+      mat-icon-button
+      (click)="toggleTheme()"
+      >
         @if (darkMode()) {
           <mat-icon>light_mode</mat-icon>
         } @else {
           <mat-icon>dark_mode</mat-icon>
         }
-      </button>  -->
+      </button> 
     </mat-toolbar>
   `,
   styles: `
@@ -36,7 +41,16 @@ import { SidenavService } from '../../../services/ui/sidenav.service';
   `
 })
 export class HeaderComponent {
-  
+  // Sidenav Collapse
   collpasedService = inject(SidenavService);
   collapsed = this.collpasedService.collapsed;
+
+  // Dark Theme
+  darkThemeService = inject(DarkThemeService);
+  darkMode = this.darkThemeService.darkMode;
+
+  toggleTheme() {
+    this.darkThemeService.toggleTheme();
+  }
+  
 }

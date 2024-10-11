@@ -12,9 +12,10 @@
 // Define the theme object.
 $mbassscode-theme-theme: mat.define-theme((
   color: (
-    theme-type: light,
-    primary: mat.$azure-palette,
-    tertiary: mat.$blue-palette,
+    use-system-variables: true,
+  ),
+  typography: (
+    use-system-variables: true,
   ),
   density: (
     scale: 0,
