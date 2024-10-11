@@ -1,0 +1,15 @@
+.mat-mdc-raised-button {
+  // Font Size
+  --mdc-protected-button-label-text-size : 12px;
+  // Height
+  --mdc-protected-button-container-height: 32px;
+  // Border radius
+  --mdc-protected-button-container-shape: 6px;
+
+    // padding: 0 var(--mat-protected-button-horizontal-padding, 16px);
+    // box-shadow: var(--mdc-protected-button-container-elevation-shadow, var(--mat-app-level1));
+    // font-family: var(--mdc-protected-button-label-text-font, var(--mat-app-label-large-font));
+    // letter-spacing: var(--mdc-protected-button-label-text-tracking, var(--mat-app-label-large-tracking));
+    // text-transform: var(--mdc-protected-button-label-text-transform);
+    // font-weight: var(--mdc-protected-button-label-text-weight, var(--mat-app-label-large-weight));
+}

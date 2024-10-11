@@ -1,0 +1,21 @@
+.mat-mdc-card-title {
+  // font-size:
+  --mat-card-title-text-size: 18px;
+  // font-family: var(--mat-card-title-text-font, var(--mat-app-title-large-font));
+  // line-height: var(--mat-card-title-text-line-height, var(--mat-app-title-large-line-height));
+  // letter-spacing: var(--mat-card-title-text-tracking, var(--mat-app-title-large-tracking));
+  // font-weight: var(--mat-card-title-text-weight, var(--mat-app-title-large-weight));
+}
+.mat-mdc-card-subtitle {
+  //   font-size:
+  --mat-card-subtitle-text-size: 14px;
+
+  // color: var(--mat-card-subtitle-text-color, var(--mat-app-on-surface));
+  //   font-family: var(--mat-card-subtitle-text-font, var(--mat-app-title-medium-font));
+  //   line-height: var(--mat-card-subtitle-text-line-height, var(--mat-app-title-medium-line-height));
+  //   letter-spacing: var(--mat-card-subtitle-text-tracking, var(--mat-app-title-medium-tracking));
+  //   font-weight: var(--mat-card-subtitle-text-weight, var(--mat-app-title-medium-weight));
+}
+.mat-mdc-card-content {
+  font-size: 14px;
+}
