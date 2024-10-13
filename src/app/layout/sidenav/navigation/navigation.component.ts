@@ -3,7 +3,7 @@ import { MatListModule } from '@angular/material/list';
 import { MenuItemComponent } from "./menu-item.component";
 import { SidenavService } from '../../../services/ui/sidenav.service';
 import { menuItem } from '../../menu-item';
-import { MenuItem } from '../../../types/menuItem-type';
+import { MenuItem } from '../../../models/menuItem-type';
 // import { MenuItemComponent } from '../menu-item/menu-item.component';
 
 

@@ -4,7 +4,7 @@ import { MatListModule } from '@angular/material/list';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { SidenavService } from '../../../services/ui/sidenav.service';
-import { MenuItem } from '../../../types/menuItem-type';
+import { MenuItem } from '../../../models/menuItem-type';
 
 @Component({
   selector: 'app-menu-item',
