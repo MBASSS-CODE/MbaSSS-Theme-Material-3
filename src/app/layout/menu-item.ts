@@ -7,7 +7,7 @@ export const menuItem: MenuItem[] = [
     route: 'sidenav/components/button',
   },
   {
-    icon: 'list',
+    icon: 'credit_card',
     label: 'Card',
     route: 'sidenav/components/card'
   },
@@ -27,6 +27,11 @@ export const menuItem: MenuItem[] = [
         route: 'dynamic-table'
       }
     ]
+  },
+  {
+    icon: 'keyboard',
+    label: 'Input',
+    route: 'sidenav/components/input'
   },
   {
     icon: 'menu',

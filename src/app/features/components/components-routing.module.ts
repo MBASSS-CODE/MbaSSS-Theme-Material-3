@@ -23,6 +23,10 @@ const routes: Routes = [
         loadComponent: () => import('./table/dynamic-table/dynamic-table.component')
       }
     ]
+  },
+  {
+    'path': 'input',
+    loadComponent: () => import('./input/input.component')
   }
 ];
 

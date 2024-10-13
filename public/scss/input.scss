@@ -1,0 +1,62 @@
+.mat-mdc-form-field {
+  /* ============ Fill Text Field ============ */
+  // --mdc-filled-text-field-caret-color: var(--sys-primary);
+  // --mdc-filled-text-field-container-color: var(--sys-surface-dim);
+  // --mdc-filled-text-field-label-text-color: var(--sys-on-surface);
+  // --mdc-filled-text-field-active-indicator-color: #000;
+  // --mdc-filled-text-field-input-text-color: v
+  // --mdc-filled-text-field-input-text-placeholder-color:
+  // --mdc-filled-text-field-hover-active-indicator-color:
+  // --mdc-filled-text-field-focus-active-indicator-color:
+  // --mdc-filled-text-field-focus-label-text-color: #f44336;
+  // --mdc-filled-text-field-label-text-font:
+  // --mdc-filled-text-field-label-text-size: 14px;
+  // --mdc-filled-text-field-label-text-tracking: .1rem;
+  // --mdc-filled-text-field-label-text-weight: 400;
+}
+
+.mat-mdc-form-field {
+  height: 55px;
+}
+
+// change height (outline)
+.mat-mdc-text-field-wrapper {
+  height: 35px !important;
+  --mat-form-field-container-height: 35px !important;
+}
+
+.mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+  // top: 16px !important;
+}
+
+.mat-mdc-input-element {
+  top: -6px !important;
+  position: relative !important;
+}
+
+.mat-mdc-form-field .mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
+  // top: 25px;
+  // margin-right: 10px;
+  position: relative;
+  // font-weight: 300;
+  padding: 0 0 0 10px;
+  left: 0px;
+  --mat-mdc-form-field-floating-label-scale: .75;
+}
+// .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
+//   --mat-mdc-form-field-label-transform: translateY(calc(calc(6.75px + var(--mat-form-field-container-height) / 2) * -1)) scale(var(--mat-mdc-form-field-floating-label-scale, 0.75));
+//   transform: var(--mat-mdc-form-field-label-transform);
+// }
+.mat-mdc-form-field-icon-prefix,
+.mat-mdc-form-field-icon-suffix {
+  padding: 0 0 0 80px;
+  top: -9px;
+}
+
+
+// OUTLINE
+.mdc-text-field--outlined {
+  // --mdc-outlined-text-field-outline-width: 2px; //change input border width
+  // --mdc-outlined-text-field-focus-outline-width: 2px; //focus to change input border width
+  // --mdc-outlined-text-field-container-shape: 25px; //change border radius
+}
