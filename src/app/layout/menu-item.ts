@@ -34,6 +34,11 @@ export const menuItem: MenuItem[] = [
     route: 'sidenav/components/input'
   },
   {
+    icon: 'inventory_2',
+    label: 'Product',
+    route: 'sidenav/data-product'
+  },
+  {
     icon: 'menu',
     label: 'nested',
     route: 'side-nav/page-nested',

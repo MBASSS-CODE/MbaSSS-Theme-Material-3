@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { DummyJSONService } from '../../../services/api/dummy-json.service';
 import { HttpParams } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @Component({
   selector: 'app-product',
@@ -13,7 +13,8 @@ import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
   imports: [
     CommonModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatProgressBarModule
   ],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss'
@@ -39,7 +40,6 @@ export default class ProductComponent {
 
   constructor(
     private dummyJSONService: DummyJSONService,
-    private snackbar: MatSnackBar,
   ) { }
 
   ngOnInit(): void {
@@ -48,6 +48,8 @@ export default class ProductComponent {
   }
   
   productData(event?: any) {
+    this.loading = true;
+
     this.filterParams = this.filterParams
       .set('limit', this.limit.toString())
       .set('skip', this.skip.toString())
@@ -58,10 +60,11 @@ export default class ProductComponent {
         this.products = data.products;
         this.total = data.total;
 
-        console.log(this.products);
+        this.loading = false;
       },
       error: (error: any) => {
         console.error('Error fetching products', error);
+        this.loading = false;
       }
     });
   }
