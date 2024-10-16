@@ -2,14 +2,18 @@
   align-items: center !important;
 }
 
-.mat-mdc-form-field {
+.mat-mdc-paginator-page-size-select {
   height: 25px;
+}
+
+.mat-mdc-select-arrow-wrapper {
+  height: 23px !important;
 }
 
 .mat-mdc-form-field-flex {
   height: 25px !important;
 }
 
-.mdc-text-field--outlined .mat-mdc-form-field-infix, .mdc-text-field--no-label .mat-mdc-form-field-infix {
-  padding: 2px !important;
-}
+// .mdc-text-field--outlined .mat-mdc-form-field-infix, .mdc-text-field--no-label .mat-mdc-form-field-infix {
+//   padding: 2px !important;
+// }
