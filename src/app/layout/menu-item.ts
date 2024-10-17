@@ -42,6 +42,11 @@ export const menuItem: MenuItem[] = [
         icon: 'inventory_2',
         label: 'Search Product',
         route: 'search-product',
+      },
+      {
+        icon: 'inventory_2',
+        label: 'Select Product',
+        route: 'select-product',
       }
     ]
   },

@@ -56,9 +56,7 @@ export default class SearchProductComponent {
     this.searchForm.get('search')?.valueChanges.
     pipe(
       debounceTime(1000),
-      tap(() =>
-        this.loading = true
-      ),
+      tap(() => this.loading = true),
       distinctUntilChanged(),
       switchMap((value) => this.dummyJSONService.search(value))
     ).subscribe(

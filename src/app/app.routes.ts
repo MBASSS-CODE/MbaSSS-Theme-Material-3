@@ -22,6 +22,10 @@ export const routes: Routes = [
       {
         path: 'data-product/search-product',
         loadComponent: () => import('./features/data/product/search-product/search-product.component')
+      },
+      {
+        path: 'data-product/select-product',
+        loadComponent: () => import('./features/data/product/select-product/select-product.component')
       }
     ]
   },
