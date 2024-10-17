@@ -36,7 +36,14 @@ export const menuItem: MenuItem[] = [
   {
     icon: 'inventory_2',
     label: 'Product',
-    route: 'sidenav/data-product'
+    route: 'sidenav/data-product',
+    childRoutes: [
+      {
+        icon: 'inventory_2',
+        label: 'Search Product',
+        route: 'search-product',
+      }
+    ]
   },
   {
     icon: 'menu',

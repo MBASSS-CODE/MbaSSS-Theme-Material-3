@@ -21,4 +21,9 @@ export class DummyJSONService {
   public get(id:string){
     return this.httpClient.get(`${this.apiURL}/${id}`);
   }
+
+  public search(keyword: string) {
+    console.log('keyword', keyword);
+    return this.httpClient.get(`${this.apiURL}/search?q=${keyword}`);
+  }
 }
