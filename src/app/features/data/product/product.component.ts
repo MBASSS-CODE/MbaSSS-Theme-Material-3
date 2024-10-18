@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -14,7 +15,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     CommonModule,
     MatTableModule,
     MatPaginatorModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    RouterLink
   ],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss'
@@ -26,7 +28,7 @@ export default class ProductComponent {
   filterParams: HttpParams = new HttpParams();
 
   // table properties
-  displayedColumns: string[] = ['id', 'title', 'price'];
+  displayedColumns: string[] = ['id', 'title', 'price', 'action'];
   total: number = 0;
 
   limit: number = 10;
