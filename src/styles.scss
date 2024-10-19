@@ -10,7 +10,7 @@
 @include mat.core();
 
 // Define the theme object.
-$mbassscode-theme-theme: mat.define-theme((
+$mbassscode-theme: mat.define-theme((
   color: (
     use-system-variables: true,
   ),
@@ -18,7 +18,7 @@ $mbassscode-theme-theme: mat.define-theme((
     use-system-variables: true,
   ),
   density: (
-    scale: 0,
+    scale: -5,
   )
 ));
 
@@ -26,15 +26,17 @@ $mbassscode-theme-theme: mat.define-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 :root {
-  @include mat.all-component-themes($mbassscode-theme-theme);
+  @include mat.all-component-themes($mbassscode-theme);
+  @include mat.color-variants-backwards-compatibility($mbassscode-theme);
+  @include mat.typography-hierarchy($mbassscode-theme);  // typography styles could be included too
 }
 
 // Comment out the line below if you want to use the pre-defined typography utility classes.
 // For more information: https://material.angular.io/guide/typography#using-typography-styles-in-your-application.
-// @include mat.typography-hierarchy($mbassscode-theme-theme);
+// @include mat.typography-hierarchy($mbassscode-theme);
 
 // Comment out the line below if you want to use the deprecated `color` inputs.
-// @include mat.color-variants-backwards-compatibility($mbassscode-theme-theme);
+// @include mat.color-variants-backwards-compatibility($mbassscode-theme);
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
@@ -42,22 +44,32 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @import "../public/scss/sidenav.scss";
 
-@import "../public/scss/button/basic-button.scss";
-@import "../public/scss/button/raised-button.scss";
-@import "../public/scss/button/stroked-button.scss";
-@import "../public/scss/button/flat-button.scss";
-@import "../public/scss/button/icon-button.scss";
-@import "../public/scss/button/fab-button.scss";
-@import "../public/scss/button/mini-fab-button.scss";
-@import "../public/scss/button/button-toggle.scss";
+// @import "../public/scss/button/basic-button.scss";
+// @import "../public/scss/button/raised-button.scss";
+// @import "../public/scss/button/stroked-button.scss";
+// @import "../public/scss/button/flat-button.scss";
+// @import "../public/scss/button/icon-button.scss";
+// @import "../public/scss/button/fab-button.scss";
+// @import "../public/scss/button/mini-fab-button.scss";
+// @import "../public/scss/button/button-toggle.scss";
 
-@import "../public/scss/icon.scss";
+// @import "../public/scss/icon.scss";
 
-// Card
-@import "../public/scss/card.scss";
+// // Card
+// @import "../public/scss/card.scss";
 
-// Input
-@import "../public/scss/input.scss";
+// // Input
+// @import "../public/scss/input.scss";
 
-// Paginator
-@import "../public/scss/paginator.scss";
+// // Paginator
+// @import "../public/scss/paginator.scss";
+
+// .btn-primary {
+//   @include mat.button-theme($mbassscode-theme, $color-variant: primary);
+// }
+// .btn-secondary {
+//   @include mat.button-theme($mbassscode-theme, $color-variant: secondary);
+// }
+// .btn-tertiary {
+//   @include mat.button-theme($mbassscode-theme, $color-variant: tertiary);
+// }
