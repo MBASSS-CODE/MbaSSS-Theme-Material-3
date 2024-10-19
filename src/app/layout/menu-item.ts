@@ -4,17 +4,17 @@ export const menuItem: MenuItem[] = [
   {
     icon: 'home',
     label: 'Button',
-    route: 'sidenav/components/button',
+    route: 'web/components/button',
   },
   {
     icon: 'credit_card',
     label: 'Card',
-    route: 'sidenav/components/card'
+    route: 'web/components/card'
   },
   {
     icon: 'table',
     label: 'Table',
-    route: 'sidenav/components/table',
+    route: 'web/components/table',
     childRoutes: [
       {
         icon: 'table',
@@ -31,12 +31,12 @@ export const menuItem: MenuItem[] = [
   {
     icon: 'keyboard',
     label: 'Input',
-    route: 'sidenav/components/input'
+    route: 'web/components/input'
   },
   {
     icon: 'inventory_2',
     label: 'Product',
-    route: 'sidenav/data-product',
+    route: 'web/data-product',
     childRoutes: [
       {
         icon: 'inventory_2',
@@ -53,7 +53,7 @@ export const menuItem: MenuItem[] = [
   {
     icon: 'format_color_text',
     label: 'Typography',
-    route: 'sidenav/typography',
+    route: 'web/typography',
   },
   {
     icon: 'menu',

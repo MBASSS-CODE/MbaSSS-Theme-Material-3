@@ -12,13 +12,13 @@ import { MenuItem } from '../../../models/menuItem-type';
   standalone: true,
   imports: [MatListModule, MenuItemComponent],
   template: `
-    <div class="sidenav-header">
+    <div class="web-header">
       <img 
         src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt=""
         [height]="profileSizePicture()"
         [width]="profileSizePicture()"  
       >
-      <div class="header-text" [class.hide-header-text]="sidenavCollapse()">
+      <div class="header-text" [class.hide-header-text]="webCollapse()">
         <h2 class="mat-title-medium">Shiba Inu Channel</h2>
         <p>Shiba Inu Name</p>
       </div>
@@ -35,7 +35,7 @@ import { MenuItem } from '../../../models/menuItem-type';
       transition: all 0.3s ease-in-out;
     }
 
-    .sidenav-header {
+    .web-header {
       padding-top: 24px;
       text-align: center;
 
@@ -70,7 +70,7 @@ import { MenuItem } from '../../../models/menuItem-type';
 export class NavigationComponent {
 
   collpasedService = inject(SidenavService);
-  sidenavCollapse = this.collpasedService.collapsed;
+  webCollapse = this.collpasedService.collapsed;
   profileSizePicture = this.collpasedService.profileSizePicture;
 
   // Menu Item

@@ -94,8 +94,8 @@ export class MenuItemComponent {
   
   item = input.required<MenuItem>();
 
-  sidenavService = inject(SidenavService);
-  collapsed = this.sidenavService.collapsed;
+  webService = inject(SidenavService);
+  collapsed = this.webService.collapsed;
   
   nestedMenuOpen = signal(false);
 

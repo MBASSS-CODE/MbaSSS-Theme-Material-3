@@ -11,7 +11,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import {MatCardModule} from '@angular/material/card';
 
 @Component({
-  selector: 'app-sidenav',
+  selector: 'app-web-layout',
   standalone: true,
   providers: [SidenavService],
   imports: [
@@ -67,7 +67,7 @@ import {MatCardModule} from '@angular/material/card';
     }
   `
 })
-export class SidenavComponent {
+export class WebComponent {
 
   collpasedService = inject(SidenavService);
   sidenavWidth = this.collpasedService.sidenavWidth;

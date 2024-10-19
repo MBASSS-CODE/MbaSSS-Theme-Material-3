@@ -1,15 +1,15 @@
 import { Routes } from '@angular/router';
-import { SidenavComponent } from './layout/sidenav/sidenav.component';
+import { WebComponent } from './layout/web/web.component';
 
 export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'sidenav'
+    redirectTo: 'web'
   },
   {
-    path: 'sidenav',
-    component: SidenavComponent,
+    path: 'web',
+    component: WebComponent,
     children: [
       {
         path: 'components',
