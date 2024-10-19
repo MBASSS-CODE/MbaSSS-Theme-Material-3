@@ -19,7 +19,7 @@ import { MenuItem } from '../../../models/menuItem-type';
         [width]="profileSizePicture()"  
       >
       <div class="header-text" [class.hide-header-text]="sidenavCollapse()">
-        <h2>Shiba Inu Channel</h2>
+        <h2 class="mat-title-medium">Shiba Inu Channel</h2>
         <p>Shiba Inu Name</p>
       </div>
     </div>

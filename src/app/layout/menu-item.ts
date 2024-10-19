@@ -51,6 +51,11 @@ export const menuItem: MenuItem[] = [
     ]
   },
   {
+    icon: 'format_color_text',
+    label: 'Typography',
+    route: 'sidenav/typography',
+  },
+  {
     icon: 'menu',
     label: 'nested',
     route: 'side-nav/page-nested',

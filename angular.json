@@ -35,6 +35,7 @@
               "src/styles.scss",
               "public/scss/theme/dark.scss",
               "public/scss/theme/light.scss",
+              "public/scss/theme/typography.scss",
               "public/scss/grid/bootstrap-grid.min.css"
             ],
             "scripts": []

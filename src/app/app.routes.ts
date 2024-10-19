@@ -30,6 +30,10 @@ export const routes: Routes = [
       {
         path: 'data-product/:id/show',
         loadComponent: () => import('./features/data/product/detail-product/detail-product.component')
+      },
+      {
+        path: 'typography',
+        loadComponent: () => import('./features/typography/typography.component')
       }
     ]
   },
