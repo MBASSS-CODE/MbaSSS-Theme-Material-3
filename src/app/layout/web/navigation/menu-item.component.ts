@@ -73,6 +73,11 @@ import { MenuItem } from '../../../models/menuItem-type';
         }
       </div>
     }
+
+    <!-- spacing -->
+    @if(item().spacing) {
+      <div class="my-3"></div>
+    }
   `,
   styles: `
     :host * {

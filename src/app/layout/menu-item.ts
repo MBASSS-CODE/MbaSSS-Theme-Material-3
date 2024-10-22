@@ -31,7 +31,8 @@ export const menuItem: MenuItem[] = [
   {
     icon: 'keyboard',
     label: 'Input',
-    route: 'web/components/input'
+    route: 'web/components/input',
+    spacing: true
   },
   {
     icon: 'inventory_2',
@@ -58,6 +59,43 @@ export const menuItem: MenuItem[] = [
   {
     icon: 'menu',
     label: 'nested',
+    route: 'side-nav/page-nested',
+    spacing: true,
+    childRoutes: [
+      {
+        icon: 'menu',
+        label: 'nested-first',
+        route: 'page-nested-first',
+        childRoutes: [
+          {
+            icon: 'menu',
+            label: 'nested-first-first',
+            route: 'page-nested-first-first',
+          },
+          {
+            icon: 'menu',
+            label: 'nested-first-second',
+            route: 'page-nested-first-second',
+          },
+        ]
+      },
+      {
+        icon: 'menu',
+        label: 'nested-second',
+        route: 'page-nested-second',
+      },
+      {
+        icon: 'menu',
+        label: 'nested-third',
+        route: 'page-nested-third',
+      },
+    ]
+  },
+
+
+  {
+    icon: 'menu',
+    label: 'Menu Nested',
     route: 'side-nav/page-nested',
     childRoutes: [
       {
@@ -88,5 +126,10 @@ export const menuItem: MenuItem[] = [
         route: 'page-nested-third',
       },
     ]
+  },
+  {
+    icon: 'Other Menu',
+    label: 'nested',
+    route: 'side-nav/page-nested'
   }
 ]
