@@ -29,6 +29,7 @@ $mbassscode-theme: mat.define-theme((
   @include mat.all-component-themes($mbassscode-theme);
   @include mat.color-variants-backwards-compatibility($mbassscode-theme);
   @include mat.typography-hierarchy($mbassscode-theme);  // typography styles could be included too
+  // @include mat.icon-button-density(-5);
 }
 
 // Comment out the line below if you want to use the pre-defined typography utility classes.
@@ -53,7 +54,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 // @import "../public/scss/button/mini-fab-button.scss";
 // @import "../public/scss/button/button-toggle.scss";
 
-// @import "../public/scss/icon.scss";
+@import "../public/scss/icon.scss";
 
 // // Card
 // @import "../public/scss/card.scss";
@@ -63,13 +64,3 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 // // Paginator
 // @import "../public/scss/paginator.scss";
-
-// .btn-primary {
-//   @include mat.button-theme($mbassscode-theme, $color-variant: primary);
-// }
-// .btn-secondary {
-//   @include mat.button-theme($mbassscode-theme, $color-variant: secondary);
-// }
-// .btn-tertiary {
-//   @include mat.button-theme($mbassscode-theme, $color-variant: tertiary);
-// }

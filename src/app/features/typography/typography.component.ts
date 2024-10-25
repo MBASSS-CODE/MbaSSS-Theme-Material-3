@@ -7,8 +7,6 @@ import { MatTableModule } from '@angular/material/table';
   standalone: true,
   imports: [MatTableModule],
   template: `
-    <h1 class="mat-display-large">Typography</h1>
-
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
       <ng-container matColumnDef="title">
         <th mat-header-cell *matHeaderCellDef>Title</th>

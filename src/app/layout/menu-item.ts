@@ -2,7 +2,7 @@ import { MenuItem } from "../models/menuItem-type";
 
 export const menuItem: MenuItem[] = [
   {
-    icon: 'home',
+    icon: 'web_asset',
     label: 'Button',
     route: 'web/components/button',
   },
@@ -17,12 +17,12 @@ export const menuItem: MenuItem[] = [
     route: 'web/components/table',
     childRoutes: [
       {
-        icon: 'table',
+        icon: 'foundation',
         label: 'Basic Table',
         route: 'basic-table',
       },
       {
-        icon: 'table',
+        icon: 'dynamic_feed',
         label: 'Dynamic Table',
         route: 'dynamic-table'
       }
@@ -40,12 +40,12 @@ export const menuItem: MenuItem[] = [
     route: 'web/data-product',
     childRoutes: [
       {
-        icon: 'inventory_2',
+        icon: 'search',
         label: 'Search Product',
         route: 'search-product',
       },
       {
-        icon: 'inventory_2',
+        icon: 'playlist_add_check',
         label: 'Select Product',
         route: 'select-product',
       }
