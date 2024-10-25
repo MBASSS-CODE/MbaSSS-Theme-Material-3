@@ -37,7 +37,7 @@ export const menuItem: MenuItem[] = [
   {
     icon: 'inventory_2',
     label: 'Product',
-    route: 'web/data-product',
+    route: 'web/data/product',
     childRoutes: [
       {
         icon: 'search',

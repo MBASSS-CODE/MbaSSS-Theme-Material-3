@@ -18,24 +18,9 @@ export const routes: Routes = [
         data: { title: 'Component' },
       },
       {
-        path: 'data-product',
-        loadComponent: () => import('./features/data/product/product.component'),
-        data: { title: 'Product' },
-      },
-      {
-        path: 'data-product/search-product',
-        loadComponent: () => import('./features/data/product/search-product/search-product.component'),
-        data: { title: 'Search Product' },
-      },
-      {
-        path: 'data-product/select-product',
-        loadComponent: () => import('./features/data/product/select-product/select-product.component'),
-        data: { title: 'Select Product' },
-      },
-      {
-        path: 'data-product/:id/show',
-        loadComponent: () => import('./features/data/product/detail-product/detail-product.component'),
-        data: { title: 'Produk' },
+        path: 'data',
+        loadChildren: () => import('./features/data/data.module'),
+        data: { title: 'Data' },
       },
       {
         path: 'typography',
